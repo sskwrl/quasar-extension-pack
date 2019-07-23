@@ -1,0 +1,43 @@
+{
+    "name": "quasar-vs-code-extension-pack",
+    "displayName": "Quasar VSCode extension pack",
+    "description": "A collection of useful VSCode extensions and the required configuration for Quasar Framework projects.",
+    "publisher": "sskwrl",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "icon": "images/icon.png",
+    "categories": [
+        "Extension Packs"
+    ],
+    "extensionPack": [ 
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "CoenraadS.bracket-pair-colorizer",
+        "msjsdiag.debugger-for-chrome",
+        "dbaeumer.vscode-eslint",
+        "lacroixdavid1.vscode-format-context-menu",
+        "eamodio.gitlens",
+        "wix.vscode-import-cost",
+        "sysoev.language-stylus",
+        "eg2.vscode-npm-script",
+        "christian-kohler.npm-intellisense",
+        "esbenp.prettier-vscode",
+        "mrmlnc.vscode-attrs-sorter",
+        "Gruntfuggly.todo-tree",
+        "octref.vetur",
+        "dariofuzinato.vue-peek",
+        "robertohuertasm.vscode-icons"
+   ],
+   "license": "https://github.com/sskwrl/quasar-extension-pack/blob/master/LICENSE",
+   "homepage": "https://github.com/sskwrl/quasar-extension-pack/",
+   "bugs": {
+     "url": "https://github.com/sskwrl/quasar-extension-pack/pulls",
+     "email": "sskwrl@gmail.com"
+   },
+   "repository": {
+     "type": "git",
+     "url": "https://github.com/sskwrl/quasar-extension-pack"
+   }   
+}
