@@ -1,8 +1,8 @@
 
 # [Quasar Extension Pack](https://marketplace.visualstudio.com/items?itemName=sskwrl.quasar-extension-pack)
 
-[![quasar-logo](images/quasar-logo.png)](https://quasar.dev) 
- A [Quasar Framework](https://quasar.dev) development environment with useful VS Code extensions and minimal configuration.
+[![quasar-logo](images/quasar-logo.png)](https://quasar.dev) | A [Quasar Framework](https://quasar.dev) development environment with useful VS Code extensions and minimal configuration. | [![quasar-logo](images/quasar-logo.png)](https://quasar.dev)
+:-:|:-:|:-:
 
 A list of included extensions can be seen in the Extension Pack tab.
 
