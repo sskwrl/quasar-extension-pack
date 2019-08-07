@@ -76,7 +76,44 @@ To edit the settings use the command `Open Settings JSON` in the Command Palette
   "vetur.format.defaultFormatter.js": "prettier-eslint"
 }
 ```
+## Dubugger for Chrome
 
+Please follow the instructions at [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+
+Once you have a `.vscode/launch.json` file add or modify the configurations section to have the following contents.
+
+<div style="background-color:grey;text-align:center;padding:5px;border-radius:15px";border:2px solid>Chrome must be started with `--remote-debugging-port=9222` for the attach configuration to work.</div>
+
+```js
+"configurations": [
+    {
+        "type": "chrome",
+        "request": "attach",
+        "name": "Attach to Chrome",
+        "port": 9222,
+        "webRoot": "${workspaceFolder}/src",
+        "sourceMapPathOverrides": {
+            "webpack:///./*": "${webRoot}/*",
+            "webpack:///src/*": "${webRoot}/*",
+            "webpack:///*": "*",
+            "webpack:///./~/*": "${webRoot}/node_modules/*"
+        }
+    },
+    {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Quasar Framework: chrome",
+        "url": "http://localhost:8080/",
+        "webRoot": "${workspaceFolder}/src",
+        "sourceMapPathOverrides": {
+            "webpack:///./*": "${webRoot}/*",
+            "webpack:///src/*": "${webRoot}/*",
+            "webpack:///*": "*",
+            "webpack:///./~/*": "${webRoot}/node_modules/*"
+        }
+    }
+]
+```
 
 ## Enable and Optimize other extensions for use with Quasar Framework
 
@@ -122,7 +159,6 @@ To edit the settings use the command `Open Settings JSON` in the Command Palette
     "alt",
     "role",
     "aria-.+",
-    "q-.+",
     "$unknown$"
   ],
   "workbench.iconTheme": "vscode-icons"
@@ -132,3 +168,5 @@ To edit the settings use the command `Open Settings JSON` in the Command Palette
 ## Credits
 
 - This is just a collection of extensions.  The real work was done by the authors of the included extensions thanks and contributions should be directed to them.
+
+- Thanks to the people in [Quasar Discord](https://chat.quasar.dev) and [Quasar Forum](https://forum.quasar.dev) for suggestions and testing configuration values.
